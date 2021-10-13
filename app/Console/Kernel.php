@@ -29,7 +29,7 @@ class Kernel extends ConsoleKernel
         $schedule->call(function(){
 
             BtcController::update();
-            Log::alert('test motod call everyMinute');
+            Log::alert('BtcController::update выполнен');
 
         })->daily();
         //->everyMinute();
