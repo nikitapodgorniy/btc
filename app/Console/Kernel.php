@@ -31,7 +31,8 @@ class Kernel extends ConsoleKernel
             BtcController::update();
             Log::alert('test motod call everyMinute');
 
-        })->everyMinute();
+        })->daily();
+        //->everyMinute();
         // $schedule->command('inspire')->hourly();
     }
 
